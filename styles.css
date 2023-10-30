@@ -2,43 +2,90 @@
     box-sizing:border-box;
 }
 
+body {
+    margin:0;
+    height:100%;
+}
+
 .header {
     position:absolute;
-    top:0;
-    height:200px;
     display:flex;
-    justify-content:space-evenly;
-    align-items:center;
-    margin-left:40vw;
+    top:0;
+    height:7.5vh;
+    padding-left:40vw;
     background-color:black;
     color:white;
+    width:100%;
 }
 
 .nav {
+    font-size:1.5em;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    text-decoration:underline;
     background-color:red;
+    position:relative;
+    padding:2vh;
+    text-align:center;
+    width:20vw;
+    border:1px solid black;
 }
+
+.nav:first-of-type {
+    padding-left: 60px;
+}
+
+.nav:first-of-type:before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left:0;
+    background:linear-gradient(135deg, black 0%, black 50%, red 50%, red 100%);
+    width: 100px;
+    height:100%;
+}
+
+a {
+    text-decoration:none;
+    color:white;
+}
+
 
 .about {
     display:grid;
-    margin-top: 250px;
+    margin-top: 7.5vh;
     justify-content:center;
     align-items:center;
+    text-align:center;
     grid-template-columns: 1fr;
 }
 
+img {
+    width: 300px;
+    height:400px;
+    object-fit:cover;
+    border-radius:10%;
+}
+
+
 .about_section_header {
     border-bottom:10px solid;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:5em;
+    font-weight:bold;
 }
 
 .skills {
     display:grid;
     justify-content:center;
     align-items:center;
-    grid-template-columns: repeat(1fr, 5);
+    text-align:center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .skill_section_header {
-    grid-column:1/-1;
+    grid-column:1/6;
     border-bottom:10px solid;
 }
 
@@ -46,6 +93,7 @@
     display:grid;
     justify-content:center;
     align-items:center;
+    text-align:center;
     grid-template-columns: 1fr;
 }
 
