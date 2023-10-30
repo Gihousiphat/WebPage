@@ -61,6 +61,10 @@ body {
     height:100%;
 }
 
+.nav:last-of-type {
+    border-right:10px solid black;
+}
+
 a {
     text-decoration:none;
     color:white;
