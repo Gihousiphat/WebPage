@@ -27,11 +27,23 @@ body {
     font-style:italic;
     text-decoration:underline;
     background-color:teal;
+    justify-content:center;
+    align-items:center;
     position:relative;
     padding:2vh;
     text-align:center;
     width:20vw;
     border:1px solid black;
+}
+
+.header img {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    object-fit:fill;
+    filter:invert(1);
+    width:3vw;
 }
 
 .nav:first-of-type {
