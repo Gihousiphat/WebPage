@@ -4,6 +4,7 @@
 }
 
 body {
+    position:relative;
     margin:0;
     height:100%;
     background:linear-gradient(teal, white);
@@ -39,14 +40,11 @@ body {
     position:absolute;
     top:0;
     left:0;
-    height:100%;
+    margin-left:-10px;
+    height:7.5vh;
     object-fit:contain;
     filter:invert(1);
-    width:5px;
-}
-
-.nav:first-of-type {
-    padding-left: 60px;
+    width:100px;
 }
 
 a {
