@@ -29,7 +29,6 @@ body {
     background-color:teal;
     justify-content:center;
     align-items:center;
-    position:relative;
     padding:2vh;
     text-align:center;
     width:20vw;
@@ -48,16 +47,6 @@ body {
 
 .nav:first-of-type {
     padding-left: 60px;
-}
-
-.nav:first-of-type:before {
-    content: '';
-    position: absolute;
-    top: 0; 
-    left:0;
-    background:linear-gradient(135deg, black 0%, black 50%, teal 50%, teal 100%);
-    width: 100px;
-    height:100%;
 }
 
 a {
