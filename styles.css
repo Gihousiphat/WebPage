@@ -42,7 +42,7 @@ body {
     height:100%;
     object-fit:contain;
     filter:invert(1);
-    width:3vw;
+    width:5px;
 }
 
 .nav:first-of-type {
@@ -56,7 +56,6 @@ a {
 
 .about {
     display:grid;
-    margin-top: 7.5vh;
     justify-content:center;
     align-items:center;
     text-align:center;
